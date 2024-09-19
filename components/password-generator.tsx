@@ -4,17 +4,10 @@
 import { useState, ChangeEvent } from "react";
 
 // Import custom UI components from the UI directory
-import {
-  Card,
-//   CardHeader,
-//   CardTitle,
-//   CardDescription,
-//   CardContent,
-//   CardFooter,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Checkbox} from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/checkbox";
 import { CheckedState } from "@radix-ui/react-checkbox";
 import { Button } from "@/components/ui/button";
 
@@ -65,7 +58,7 @@ export default function GeneratePasswordComponent() {
       () => {
         alert("Password copied to clipboard!"); // Alert on successful copy
       },
-      (err) => {
+      () => {
         alert("Failed to copy password to clipboard."); // Alert on failed copy
       }
     );
